@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>汪汪生日快乐！</title>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+    color: white;
+  padding: 10px;
+  background: #FFE;
+  /*background: skyblue;*/
+    background-image: url("影子bgi.png");
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  /*background: lightblue;*/
+        /*background-image: url("影子bgi.png");*/
+    /*background-size: auto auto;*/
+}
+
+.header h1 {
+  font-size: 50px;
+    /*color: #EE2F79;*/
+    color: #00ABC0;
+    /*color: cornflowerblue;*/
+
+}
+
+.card h2 {
+    /*color: #EE2F79;*/
+    color: #00ABC0;
+}
+
+.footer h2 {
+    /*color: #EE2F79;*/
+    /*color: #00ABC0;*/
+    color: khaki;
+}
+
+.card div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 180px;
+    }
+
+.card div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+.card div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+.card div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+    border-bottom: double 2px;
+    border-color: #00ABC0;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  /*background-color: #FFE;*/
+  padding-left: 10px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  /*background-color: white;*/
+  /*background: linear-gradient(darkblue, steelblue);*/
+  background: linear-gradient(midnightblue, steelblue);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  /*background: white;*/
+  margin-top: 20px;
+}
+#img_cont {
+  display: table;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#img_cont a {
+  display: table-cell;
+  text-align: center;
+  width: 33%;
+}
+
+#img_cont img {
+  width: 100%;
+  max-width: 300px;
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <audio controls autoplay loop>
+    <source src="大城小爱.mp3" type="audio/ogg">
+    </audio>
+
+<div class="header">
+  <h1>汪汪生日快乐！</h1>
+  <p>这里记录了一些我们之间的故事的回忆</p>
+</div>
+
+<div class="topnav">
+  <a href="#">2019年</a>
+  <!--<a href="#">2020年</a>-->
+  <!--<a href="#">Link</a>-->
+  <!--<a href="#" style="float:right">Link</a>-->
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+          <div class="card">
+      <h2>汪汪的生日</h2>
+        <h5>第一次为你庆生，看到你开心的样子真好，也希望你的生日愿望能实现</h5>
+              <h5>汪汪，你以后的生日我全包了</h5>
+                      <a target="_blank" href="生日组合.png">
+      <IMG SRC="生日组合.png", height="400">
+        </a>
+                <!--<div class="row">-->
+          <!--<div class="column">-->
+              <!--<a target="_blank" href="汪汪许愿简.png">-->
+            <!--<img src="汪汪许愿简.png" alt="汪汪许愿" width="450" class="left">-->
+              <!--</a>-->
+          <!--</div>-->
+          <!--<div class="column">-->
+              <!--<a target="_blank" href="生日.png">-->
+            <!--<img src="生日.png" alt="生日" width="450" >-->
+              <!--</a>-->
+          <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <div class="card">
+      <h2>我们的日记本</h2>
+        <h5>这里是我们生活的点滴，很平凡也很精彩</h5>
+        <p>1. 2019年1月17日，通过朋友介绍，我向你请教了一些债券问题</p>
+        <p>2. 2019年4月21日，通过朋友介绍，我们聊了好久，第一次开始了解对方</p>
+        <p>3. 2019年4月22日，你中午到港，晚上我们一起吃了名馆，看了电影《闪亮人生》，在地铁站的扶梯上，你答应了和我在一起</p>
+        <p>4. 2019年4月23日，我中午来中环找你吃饭，我们第一次牵手</p>
+        <p>5. 2019年4月24日，晚上送你到小区门口，我们第一次接吻</p>
+        <p>6. 2019年4月25日，我文字表白，语音表白，你officially成为我的女朋友，深夜你做了一件大事。我们敲定了。</p>
+        <p>7. 2019年4月26日，我们在坚尼地城的海边手牵手散步，还一起逛了超市</p>
+        <p>8. 2019年4月27日，我们在我的新办公室度过了一个美好的下午，我把这个网页送给了你</p>
+        <p>9. 2019年4月28日，你邀请我来你家吃午饭，第一次品尝到了你高超的厨艺</p>
+        <p>10. 2019年4月29日，因为我加班，我们没能见面，但你还是在我下班之后陪我聊天，驱赶了我一天的疲惫和怨气</p>
+        <p>11. 2019年4月30日，我们提前庆祝了你生日，我送了你贺卡和项链，你许了愿，晚上在海边散步，真的很开心</p>
+        <p>12. 2019年5月1日，你今天回上海了，我也好想回来陪你。我们下次一起</p>
+    </div>
+    <div class="card">
+      <h2>我的汪汪</h2>
+      <h5>你是老天赐给我最珍贵的礼物，我会好好珍惜你的</h5>
+        <a target="_blank" href="ww1.jpg">
+      <IMG SRC="ww1.jpg", height="600">
+        </a>
+     </div>
+      <div class="card">
+      <h2>一些想和你说的话</h2>
+        <h5>这是我内心深处的声音</h5>
+	<p>
+        </br>亲爱的汪汪：</br></br></br>
+            你是我见过的最优秀最特别的女孩，独立，直爽，美丽，大方，（当然还有你的全能:)...</br></br>
+        我能在你身上找到太多太多吸引我的点。</br></br>
+        我真的很喜欢你，不受控制的那种。</br></br></br>
+            和你谈恋爱的这段时间，我每天都很开心，很完整。</br></br>
+            每天心里想着有一个值得我爱，值得我去照顾的人，就会让自己更加有担当，有责任心，你真的有让我变成一个更好的人。</br></br>
+        越和你相处，就越觉得你好，就越是认定了你就是我最对的那一位。</br></br></br>
+            我会记下你所有喜欢和不喜欢的东西。</br></br>
+        有太多太多的事想和你一起去做：</br></br>
+        一起去你最爱的游乐场疯玩；</br></br>
+        吃遍好吃的日料；</br></br>
+        和朋友们打麻将，玩桌游；</br></br>
+        一起去旅游；</br></br>
+        一起去上海工作；</br></br>
+        搭一个我们的家；</br></br>
+        聊怎么也聊不完的天</br></br>
+        ...</br></br></br>
+
+            我们的未来都有彼此，我相信我们会一直幸福下去。</br></br></br>
+            汪汪，我爱你。</br></br></br>
+
+        你的飞总</br></br>
+            2019年4月27日</br></br>
+    </p>
+    </div>
+      <div class="card">
+      <h2>我们的回忆</h2>
+      <h5>这些东西我都会好好珍藏，汪汪和它们都是我的宝藏</h5>
+                 <div class="row">
+          <div class="column">
+              <a target="_blank" href="办公室.jpg">
+            <img src="办公室.jpg" alt="办公室" width="450" height="500" class="left">
+              </a>
+          </div>
+          <div class="column">
+              <a target="_blank" href="汪汪做的饭.png">
+            <img src="汪汪做的饭.png" alt="汪汪做的饭" width="450" height="500" >
+              </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+              <a target="_blank" href="电影票.png">
+            <img src="电影票.png" alt="电影票" width="450" height="350" class="left">
+              </a>
+          </div>
+          <div class="column">
+              <a target="_blank" href="饭店.png">
+            <img src="饭店.png" alt="饭店" width="450" height="350" >
+              </a>
+          </div>
+        </div>
+          <div class="row">
+          <div class="column">
+              <a target="_blank" href="喜欢的东西.png">
+            <img src="喜欢的东西.png" alt="不喜欢的东西" width="450" height="500" >
+              </a>
+          </div>
+                        <div class="column">
+                            <a target="_blank" href="不喜欢的东西.png">
+            <img src="不喜欢的东西.png" alt="不喜欢的东西" width="450" height="500" >
+                            </a>
+          </div>
+        </div>
+
+          <!--<p id="img_cont">-->
+              <!--<a target="_blank" href="电影票.png"><img src="电影票.png" /></a>-->
+              <!--<a target="_blank" href="喜欢的东西.png"><img src="喜欢的东西.png" /></a>-->
+              <!--<a target="_blank" href="不喜欢的东西.png"><img src="不喜欢的东西.png" /></a>-->
+            <!--</p>-->
+
+        </div>
+  </div>
+
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>一件大事</h2>
+      <!--<div class="fakeimg" style="height:100px;">Image</div>-->
+        <a target="_blank" href="朋友圈简.png">
+        <IMG SRC="朋友圈简.png", width="300">
+        </a>
+      <h5>照顾你是我的荣幸，我们以后的生活里都会有彼此</h5>
+    </div>
+          <div class="card">
+      <h2>秀恩爱</h2>
+      <!--<div class="fakeimg" style="height:100px;">Image</div>-->
+        <a target="_blank" href="摒不住.png">
+        <IMG SRC="摒不住.png", width="300">
+        </a>
+      <h5>你是我的骄傲呀</h5>
+    </div>
+                <div class="card">
+      <h2>加班后的我</h2>
+      <!--<div class="fakeimg" style="height:100px;">Image</div>-->
+        <a target="_blank" href="加班后聊天.png">
+        <IMG SRC="加班后聊天.png", width="300">
+        </a>
+      <h5>很暖的男孩子叫暖男，很暖的女孩子叫汪汪</h5>
+    </div>
+                          <div class="card">
+                    <h2>我的文字表白</h2>
+              <a target="_blank" href="official1.png">
+      <IMG SRC="official1.png", width="300">
+              </a>
+        <h5>表白的好生硬呀</h5>
+              </div>
+      <div class="card">
+      <h2>我的语音表白</h2>
+          <a target="_blank" href="official2.png">
+      <IMG SRC="official2.png", width="300">
+          </a>
+        <h5>简单直接的表白和你肯定的答案</h5>
+    </div>
+    <div class="card">
+      <h2>你的表白</h2>
+        <a target="_blank" href="好喜欢你.png">
+      <IMG SRC="好喜欢你.png", width="300">
+        </a>
+        <h5>你不知道看到消息的那一刻我有多开心</h5>
+    </div>
+    <div class="card">
+      <h2>核心</h2>
+        <a target="_blank" href="核心.png">
+      <IMG SRC="核心.png", width="300">
+        </a>
+        <h5>偶尔撩一下你</h5>
+    </div>
+          <div class="card">
+      <h2>养你</h2>
+              <a target="_blank" href="养你.png">
+      <IMG SRC="养你.png", width="300">
+              </a>
+        <h5>我想养你一辈子</h5>
+          </div>
+                <!--<div class="card">-->
+      <!--<h2>第一次聊天</h2>-->
+              <!--<a target="_blank" href="第一次聊天.png">-->
+      <!--<IMG SRC="第一次聊天.png", width="300">-->
+              <!--</a>-->
+        <!--<h5>这是我们开始的地方</h5>-->
+          <!--</div>-->
+      <div class="card">
+      <h2>睡醒第一件事</h2>
+              <a target="_blank" href="睡醒.png">
+      <IMG SRC="睡醒.png", width="300">
+              </a>
+        <h5>自从和你谈了恋爱，睡醒第一件事就是找你</h5>
+              </div>
+                <div class="card">
+      <h2>害羞的汪汪</h2>
+      <!--<div class="fakeimg" style="height:100px;">Image</div>-->
+        <a target="_blank" href="肉麻.png">
+        <IMG SRC="肉麻.png", width="300">
+        </a>
+      <h5>被自己肉麻到的汪汪</h5>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>“执子之手，与子偕老”</h2>
+</div>
+
+</body>
+</html>
