@@ -3,10 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>大汪和大飞的网站</title>
+    <style>
+        .topnav {
+            padding: 30px;
+            text-align: center;
+            font-size: 24px;
+            color: #333333;
+            margin: 0 auto;
+        }
+        .topnav a {
+            float: left;
+        }
+        a:link,a:visited {
+            display: block;
+            width: 120px;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #bebebe;
+            text-align: center;
+            padding: 4px;
+        }
+        a:hover,a:active {
+            background-color: #cc0000;
+        }
+
+    </style>
 </head>
 <body>
-<button onclick="window.location.href = 'sub1.html'">
-    Go to sub web 1
-</button>
+<div class="topnav">
+    <a href="#">故事</a>
+    <a href="sub1.html">时间轴</a>
+    <a href="sub1.html">未来</a>
+</div>
 </body>
 </html>
