@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>大汪和大飞的网站</title>
+    <title>Future</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,6 +12,22 @@
             font-family: Arial;
             padding: 10px;
             background: #f1f1f1;
+        }
+
+        a {
+            background-color: transparent;
+            /* 1 */
+            -webkit-text-decoration-skip: objects;
+            /* 2 */
+        }
+
+        a, .page-link {
+            color: #4d7ea8;
+            font-weight: bold;
+        }
+
+        a:hover, a:focus, a:active, .page-link:hover, .page-link:focus, .page-link:active {
+            color: #7ea3c4;
         }
 
         /* Header/Blog Title */
@@ -29,6 +45,10 @@
         .topnav {
             overflow: hidden;
             background-color: #333;
+        }
+
+        .topnav .current {
+            background: #e2214b;
         }
 
         /* Style the topnav links */
@@ -49,24 +69,39 @@
 
         /* Create two unequal columns that floats next to each other */
         /* Left column */
+        /* padding: 上 右 下 左 */
         .leftcolumn {
             float: left;
-            width: 75%;
+            width: 100%;
+            padding: 0% 25% 0% 25%;
         }
 
         /* Right column */
         .rightcolumn {
             float: left;
-            width: 25%;
+            width: 50%;
             background-color: #f1f1f1;
             padding-left: 20px;
         }
 
         /* Fake image */
         .fakeimg {
-            background-color: #aaa;
+            /*background-color: #aaa;*/
             width: 100%;
             padding: 20px;
+        }
+
+        main-profile-image {
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .main-profile-image img {
+            height: auto;
+            max-width: 100%;
+            position: relative;
+            float: none;
+            right: auto;
         }
 
         /* Add a card effect for articles */
@@ -89,6 +124,7 @@
             text-align: center;
             background: #ddd;
             margin-top: 20px;
+            color: #355774;
         }
 
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -110,61 +146,36 @@
 </head>
 <body>
 
-<div class="header">
-    <h1>My Website</h1>
-    <p>Resize the browser window to see the effect.</p>
-</div>
+<!--<div class="header">-->
+<!--<h1>My Website</h1>-->
+<!--<p>Resize the browser window to see the effect.</p>-->
+<!--</div>-->
 
 <div class="topnav">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#" style="float:right">Link</a>
+    <a href="../index.html">首页</a>
+    <a href="main.html">故事</a>
+    <a href="future.html">未来</a>
+    <a class="current" href="timeline.html">时间轴</a>
 </div>
 
 <div class="row">
     <div class="leftcolumn">
         <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
-        </div>
-        <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco.</p>
-        </div>
-    </div>
-    <div class="rightcolumn">
-        <div class="card">
-            <h2>About Me</h2>
-            <div class="fakeimg" style="height:100px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-        </div>
-        <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
-        </div>
-        <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text..</p>
+            <h2>未来的时间轴，我们一起填</h2>
+            <p>2019年4月25日，我们在一起了</p>
+            <p>2020年2月14日，大汪和大飞的网站上线了</p>
+            <p>202x年x月xx日，我们有了自己的__</p>
+            <p>202x年x月xx日，我们__ __了</p>
+            <p>202x年x月xx日，我们__ __了</p>
+            <p>202x年x月xx日，大汪__ __了</p>
+            <p>202x年x月xx日，我们有了自己的__ __</p>
         </div>
     </div>
 </div>
 
-<div class="footer">
-    <h2>Footer</h2>
-</div>
+<!--<div class="footer">-->
+<!--<h2>执子之手，与子偕老</h2>-->
+<!--</div>-->
 
 </body>
 </html>

@@ -24,7 +24,7 @@
 </script>
 <!-- Profile Image -->
 <div id="main-profile-image">
-    <a href="htmls/articles.html"><img src="imgs/头像.jpg" alt="Profile Image"/></a>
+    <a href="htmls/main.html"><img src="imgs/头像.jpg" alt="Profile Image"/></a>
 </div>
 
 <div class="wrapper">
@@ -37,21 +37,28 @@
     <!-- Main content area -->
     <main>
         <article>
-            <p class="text-center">Happy Valentine's Day!</p>
+            <p class="text-center"><strong>Happy Valentine's Day!</strong></p>
+            <p class="text-center">大汪和大飞的网站在情人节上线了！</p>
             <p class="text-center" id="datetime">
                 <script>
-                    document.write(setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000));
+                    document.write(setInterval("document.getElementById('datetime').innerHTML='现在是' + new Date().toLocaleString();", 1000));
                 </script>
             </p>
-            <p class="text-center">我们的故事开始于2019年4月25日</p>
+            <p class="text-center">大汪和大飞的故事开始于2019年4月25日</p>
             <p class="text-center">至今我们已经相爱了</p>
             <p class="text-center" id="datetime1"></p>
             <script>
                 document.getElementById('datetime1').innerHTML = DateDiff(new Date());
             </script>
+            <p class="text-center">每一天都很幸福</p>
+            <p class="text-center">这里是我们的回忆册和未来的计划书</p>
+            <p class="text-center">记录了我们的故事和点滴</p>
+            <p class="text-center">也憧憬着我们的下一篇章</p>
+            <p class="text-center">无论我们同床共眠</p>
+            <p class="text-center">或相距甚远</p>
+            <p class="text-center">都有这份爱将彼此牵连</p>
 
-
-            <p class="text-center no-spacer"><a href="htmls/articles.html" class="button button-large">
+            <p class="text-center no-spacer"><a href="htmls/main.html" class="button button-large">
                 请进~
             </a></p>
         </article>

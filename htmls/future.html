@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Memory</title>
+    <title>Future</title>
     <style>
         * {
             box-sizing: border-box;
@@ -46,6 +46,7 @@
             overflow: hidden;
             background-color: #333;
         }
+
         .topnav .current {
             background: #e2214b;
         }
@@ -68,9 +69,11 @@
 
         /* Create two unequal columns that floats next to each other */
         /* Left column */
+        /* padding: 上 右 下 左 */
         .leftcolumn {
             float: left;
-            width: 50%;
+            width: 100%;
+            padding: 0% 25% 0% 25%;
         }
 
         /* Right column */
@@ -123,9 +126,6 @@
             margin-top: 20px;
             color: #355774;
         }
-        strong {
-            background-color: crimson;
-        }
 
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 800px) {
@@ -153,58 +153,32 @@
 
 <div class="topnav">
     <a href="../index.html">首页</a>
-    <a class="current" href="#">故事</a>
-    <a href="future.html">未来</a>
+    <a href="main.html">故事</a>
+    <a class="current" href="future.html">未来</a>
     <a href="timeline.html">时间轴</a>
 </div>
 
 <div class="row">
     <div class="leftcolumn">
         <div class="card">
-            <h2><a href="articles.html">网站上线啦</a></h2>
+            <h2>愿望</h2>
             <h5>Feb 14, 2020</h5>
-            <a target="_blank" href="../imgs/大汪生日1.jpg">
-                <!--<IMG class="fakeimg" SRC="../imgs/rose2.jpg" height="200" width="600" alt="图片加载失败">-->
-                <IMG class="fakeimg" SRC="../imgs/大汪生日1.jpg" alt="图片加载失败">
-            </a>
-            <p>2020年情人节，大飞终于鼓捣完了我们的网站，架子有了，内容慢慢补</p>
-        </div>
 
-        <div class="card">
-            <h2><a href="articles.html">大飞生日</a></h2>
-            <h5>Apr 27, 2020</h5>
-            <a target="_blank" href="../imgs/大飞生日1.jpg">
-                <!--<IMG SRC="../imgs/大飞生日1.jpg" height="200" width="600" alt="图片加载失败">-->
-                <IMG class="fakeimg" SRC="../imgs/大飞生日1.jpg" alt="图片加载失败">
+            <p>执子之手，与子偕老</p>
+            <p>希望我们能相亲相爱一辈子</p>
+            <p>以后在一个90平的房子里</p>
+            <p>指着这个网站对一个（或几个）小赤佬说</p>
+            <p>你爸妈的故事就在这里</p>
+            <a target="_blank" href="../imgs/合照1.jpg">
+                <IMG class="fakeimg" SRC="../imgs/合照1.jpg" alt="图片加载失败">
             </a>
-            <p>在香港过的为数不多的生日，很难忘（晚饭很好吃），谢谢大汪~</p>
-        </div>
-    </div>
-    <div class="rightcolumn">
-        <div class="card">
-            <h2><a href="articles.html">2020跨年</a></h2>
-            <h5>Apr 27, 2020</h5>
-            <a target="_blank" href="../imgs/2020_2.jpg">
-                <!--<IMG SRC="../imgs/2020_2.jpg" height="200" width="600" alt="图片加载失败">-->
-                <IMG class="fakeimg" SRC="../imgs/2020_2.jpg" alt="图片加载失败">
-            </a>
-            <p>2020年是我们一起跨的第一个年，以后还有很多很多</p>
-        </div>
-        <div class="card">
-            <h2><a href="articles.html">大汪生日</a></h2>
-            <h5>Apr 27, 2020</h5>
-            <a target="_blank" href="../imgs/汪汪许愿简.png">
-                <!--<IMG SRC="../imgs/影子bgi.png" height="200" width="600" alt="图片加载失败">-->
-                <IMG class="fakeimg" SRC="../imgs/汪汪许愿简.png" alt="图片加载失败">
-            </a>
-            <p>大汪许愿的样子真好看！</p>
         </div>
     </div>
 </div>
 
-<div class="footer">
-    <h2>执子之手，与子偕老</h2>
-</div>
+<!--<div class="footer">-->
+<!--<h2>执子之手，与子偕老</h2>-->
+<!--</div>-->
 
 </body>
 </html>

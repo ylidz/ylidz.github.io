@@ -2,82 +2,172 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>大汪和大飞的网站</title>
+    <title>Future</title>
     <style>
         * {
             box-sizing: border-box;
         }
 
-        .header, .footer {
-            background-color: grey;
-            color: white;
-            padding: 15px;
+        body {
+            font-family: Arial;
+            padding: 10px;
+            background: #f1f1f1;
         }
 
-        .column {
+        a {
+            background-color: transparent;
+            /* 1 */
+            -webkit-text-decoration-skip: objects;
+            /* 2 */
+        }
+
+        a, .page-link {
+            color: #4d7ea8;
+            font-weight: bold;
+        }
+
+        a:hover, a:focus, a:active, .page-link:hover, .page-link:focus, .page-link:active {
+            color: #7ea3c4;
+        }
+
+        /* Header/Blog Title */
+        .header {
+            padding: 30px;
+            text-align: center;
+            background: white;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
             float: left;
-            padding: 15px;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
-        .clearfix::after {
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        /* padding: 上 右 下 左 */
+        .leftcolumn {
+            float: left;
+            width: 100%;
+            padding: 0% 25% 0% 25%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+            float: left;
+            width: 50%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+
+        /* Fake image */
+        .fakeimg {
+            /*background-color: #aaa;*/
+            width: 100%;
+            padding: 20px;
+        }
+
+        main-profile-image {
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .main-profile-image img {
+            height: auto;
+            max-width: 100%;
+            position: relative;
+            float: none;
+            right: auto;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
             content: "";
-            clear: both;
             display: table;
+            clear: both;
         }
 
-        .menu {
-            width: 25%;
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+            margin-top: 20px;
+            color: #355774;
         }
 
-        .content {
-            width: 75%;
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
         }
 
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu li {
-            padding: 8px;
-            margin-bottom: 8px;
-            background-color: #33b5e5;
-            color: #ffffff;
-        }
-
-        .menu li:hover {
-            background-color: #0099cc;
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>Chania</h1>
+<!--<div class="header">-->
+<!--<h1>My Website</h1>-->
+<!--<p>Resize the browser window to see the effect.</p>-->
+<!--</div>-->
+
+<div class="topnav">
+    <a href="main.html">故事</a>
+    <a href="future.html">未来</a>
+    <a href="timeline.html">时间轴</a>
 </div>
 
-<div class="clearfix">
-    <div class="column menu">
-        <ul>
-            <li>The Flight</li>
-            <li>The City</li>
-            <li>The Island</li>
-            <li>The Food</li>
-        </ul>
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>敬请期待</h2>
+
+            <a target="_blank" href="../imgs/头像.jpg">
+                <IMG class="fakeimg" SRC="../imgs/头像.jpg" alt="图片加载失败">
+            </a>
+        </div>
     </div>
-
-    <div class="column content">
-        <h1>The City</h1>
-        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the
-            old town and the modern city.</p>
-        <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
-    </div>
 </div>
 
-<div class="footer">
-    <p>Footer Text</p>
-</div>
+<!--<div class="footer">-->
+<!--<h2>执子之手，与子偕老</h2>-->
+<!--</div>-->
 
 </body>
 </html>
