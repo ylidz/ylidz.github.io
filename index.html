@@ -5,7 +5,7 @@
         //计算天数差的函数，通用
         var pswd = "";
         pswd = prompt("我们哪一天在一起的？(YYYYMMDD)", "");
-        if (pswd != "20190425"){
+        if (pswd != "20190425" && pswd != '20190422'){
             alert("密码不正确，无法进入");
             // window.opener = null;
             window.open("about:blank", "_self").close()
@@ -27,8 +27,9 @@
     //计算天数差的函数，通用
     function DateDiff(date) {
         var baseDate = new Date(), iDays;
-        baseDate.setFullYear(2019, 4, 25);
-        iDays = parseInt(Math.abs(date - baseDate) / 1000 / 60 / 60 / 24).toString() + "天";    //把相差的毫秒数转换为天数
+        baseDate.setFullYear(2019, 4, 22);
+        // iDays = parseInt(Math.abs(date - baseDate) / 1000 / 60 / 60 / 24).toString() + "天";    //把相差的毫秒数转换为天数
+        iDays = "365天";    //把相差的毫秒数转换为天数
         return iDays
     }
 </script>
@@ -47,26 +48,28 @@
     <!-- Main content area -->
     <main>
         <article>
-            <p class="text-center"><strong>Happy Girls' Day!</strong></p>
+            <p class="text-center"><strong>Happy Anniversary!</strong></p>
             <p class="text-center">大汪和大飞的网站在2020年情人节上线了！</p>
             <p class="text-center" id="datetime">
                 <script>
                     document.write(setInterval("document.getElementById('datetime').innerHTML='现在是' + new Date().toLocaleString();", 1000));
                 </script>
             </p>
-            <p class="text-center">大汪和大飞的故事开始于2019年4月25日</p>
+            <p class="text-center">大汪和大飞的故事开始于2019年4月22日</p>
             <p class="text-center">至今我们已经相爱了</p>
             <p class="text-center" id="datetime1"></p>
             <script>
                 document.getElementById('datetime1').innerHTML = DateDiff(new Date());
             </script>
-            <p class="text-center">每一天都很幸福</p>
-            <p class="text-center">这里是我们的回忆册和未来的计划书</p>
+            <p class="text-center">不知不觉，我们已经恋爱一整年了</p>
+            <p class="text-center">但这只是个开始，未来还有好多个一年、五年、十年</p>
+            <p class="text-center">希望我们能幸福、开心到永远</p>
+            <p class="text-center">这个网站是我们的回忆册和未来的计划书</p>
             <p class="text-center">记录了我们的故事和点滴</p>
             <p class="text-center">也憧憬着我们的下一篇章</p>
-            <p class="text-center">无论我们同床共眠</p>
-            <p class="text-center">或相距甚远</p>
-            <p class="text-center">都有这份爱将彼此牵连</p>
+<!--            <p class="text-center">无论我们同床共眠</p>-->
+<!--            <p class="text-center">或相距甚远</p>-->
+<!--            <p class="text-center">都有这份爱将彼此牵连</p>-->
 
             <p class="text-center no-spacer"><a href="htmls/main.html" class="button button-large">
                 请进~
