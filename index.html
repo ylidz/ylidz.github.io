@@ -4,7 +4,7 @@
     <script language="JavaScript">
         //计算天数差的函数，通用
         var pswd = "";
-        pswd = prompt("我们哪一天在一起的？(YYYYMMDD)", "");
+        pswd = prompt("我们哪一天在一起的？", "");
         if (pswd != "20190425" && pswd != '20190422'){
             alert("密码不正确，无法进入");
             // window.opener = null;
@@ -29,7 +29,7 @@
         var baseDate = new Date(), iDays;
         baseDate.setFullYear(2019, 4, 22);
         // iDays = parseInt(Math.abs(date - baseDate) / 1000 / 60 / 60 / 24).toString() + "天";    //把相差的毫秒数转换为天数
-        iDays = "365天";    //把相差的毫秒数转换为天数
+        iDays = "377天";    //把相差的毫秒数转换为天数
         return iDays
     }
 </script>
@@ -48,7 +48,7 @@
     <!-- Main content area -->
     <main>
         <article>
-            <p class="text-center"><strong>Happy Anniversary!</strong></p>
+            <p class="text-center"><strong>Happy Birthday~ 大汪!</strong></p>
             <p class="text-center">大汪和大飞的网站在2020年情人节上线了！</p>
             <p class="text-center" id="datetime">
                 <script>
